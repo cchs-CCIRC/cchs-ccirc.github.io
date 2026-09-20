@@ -33,12 +33,14 @@ document.addEventListener("DOMContentLoaded",()=>{
   /* Compact announcement bar — inspired by modern announcement components. */
   const header=document.querySelector(".site-header");
   if(header&&!document.querySelector(".ccirc-announcement")){
+    const resLink=document.querySelector('.nav-links a[href$="resources.html"]');
+    const resHref=resLink?resLink.getAttribute("href"):(location.pathname.includes("/pages/")?"resources.html":"pages/resources.html");
     const bar=document.createElement("div");
     bar.className="ccirc-announcement";
     bar.innerHTML=`<div class="wrap ccirc-announcement-inner">
       <span class="announce-dot" aria-hidden="true"></span>
       <span>CCIRC 2026 · 歷屆教材庫持續整理中</span>
-      <a href="${location.pathname.includes("/pages/")?"resources.html":"pages/resources.html"}">前往教材庫 →</a>
+      <a href="${resHref}">前往教材庫 →</a>
     </div>`;
     header.insertAdjacentElement("afterend",bar);
   }

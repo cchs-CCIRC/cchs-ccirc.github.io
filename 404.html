@@ -13,10 +13,16 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- 404 可能出現在任何深度的網址，線上以網站根目錄為基準；本機直接開檔時則維持相對路徑 -->
+  <base href="/">
+  <script>if(location.protocol==="file:"){document.querySelector("base").remove();}</script>
   <title>找不到頁面｜CCIRC</title>
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#080c11">
-  <link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png"><link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="images/icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">跳到主要內容</a>
