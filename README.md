@@ -17,7 +17,7 @@ cchs-ccirc.github.io/
 ├── css/              # Stylesheets
 ├── images/           # Images and visual assets
 ├── js/               # JavaScript files
-├── pages/            # Additional website pages
+├── pages/            # About us, learning path, resources, and joining pages
 ├── index.html        # Homepage
 ├── 404.html          # Custom 404 page
 ├── favicon.ico       # Website favicon

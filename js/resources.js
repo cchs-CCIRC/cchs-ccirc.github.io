@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         <p class="${snippet?'resource-snippet':''}">${description}</p>
         <div class="actions">
           <button class="small-btn primary preview-btn" type="button" data-index="${resourceIndex}">預覽筆記</button>
-          <a class="small-btn" href="${esc(resource.url)}" target="_blank" rel="noopener noreferrer">開啟 HackMD ↗</a>
+          <a class="small-btn" href="${esc(resource.url)}" target="_blank" rel="noopener noreferrer">開啟 HackMD <i class="ext-icon" aria-hidden="true"></i></a>
         </div>
       </article>`;
     }).join("");
@@ -303,6 +303,17 @@ document.addEventListener("DOMContentLoaded",()=>{
   [search,category].filter(Boolean).forEach(el=>{
     el.addEventListener(el.tagName==="INPUT"?"input":"change",render);
   });
+
+  const clearBtn=document.querySelector("#resource-search-clear");
+  function syncClear(){ if(clearBtn&&search)clearBtn.hidden=!search.value; }
+  search?.addEventListener("input",syncClear);
+  clearBtn?.addEventListener("click",()=>{
+    search.value="";
+    syncClear();
+    search.dispatchEvent(new Event("input",{bubbles:true}));
+    search.focus();
+  });
+  syncClear();
 
   chips.forEach(chip=>chip.addEventListener("click",()=>{
     chips.forEach(c=>c.classList.remove("active"));
