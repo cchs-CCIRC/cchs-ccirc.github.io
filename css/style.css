@@ -573,3 +573,14 @@ main{padding-top:116px}
 .search-clear:hover{opacity:1;transform:translateY(-50%) scale(1.08)}
 .search-clear img{width:26px;height:26px;display:block;border-radius:7px;border:1px solid var(--line)}
 img.notice-icon{width:28px;height:28px;flex:0 0 auto;border-radius:7px;display:block}
+
+
+/* Hero robot: a small interactive character beside the terminal */
+.hero-visual{position:relative;min-width:0;isolation:isolate}
+.hero-visual .terminal-card{position:relative;z-index:1;transform:translateY(-18px)}
+.hero-visual .terminal-card:hover{transform:translateY(-23px)}
+.hero-robot{position:absolute;z-index:2;right:-146px;bottom:-116px;width:300px;height:360px;pointer-events:auto}
+.hero-robot iframe{display:block;width:100%;height:100%;border:0;background:transparent;overflow:hidden}
+@media(max-width:1100px){.hero-robot{right:-58px;bottom:-110px;width:240px;height:300px}}
+@media(max-width:900px){.hero-visual .terminal-card{transform:none}.hero-visual .terminal-card:hover{transform:translateY(-4px)}.hero-robot{right:-10px;bottom:-95px;width:210px;height:250px}}
+@media(max-width:600px){.hero-robot{right:-8px;bottom:-88px;width:165px;height:210px}}
