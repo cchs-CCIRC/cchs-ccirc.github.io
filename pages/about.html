@@ -172,13 +172,13 @@
         </article>
         <article class="card">
           <span class="badge">教學</span>
-          <h3>高一下～高二上</h3>
-          <p>講師主要由這個階段的學長姐承接；學員原則上以國三下～高一上為主，但只要對程式有興趣都歡迎。</p>
+          <h3>歡迎大家加入～</h3>
+          <p>講師主要由高一下～高二上階段的學長姐承接；學員原則上以國三下～高一上為主，但只要對程式有興趣都歡迎。</p>
         </article>
         <article class="card">
           <span class="badge">社群</span>
-          <h3>Discord + HackMD</h3>
-          <p>加入讀書會後會進入 Discord；HackMD 則是歷屆講師留下教材、講義與筆記的公開平台。</p>
+          <h3>Discord + HackMD + CCIRC網站</h3>
+          <p>加入讀書會後會進入 Discord；HackMD 則是歷屆講師留下電子教材的公開平台。CCIRC 網站會完整收錄、整合不同時期與平台的資源。</p>
         </article>
       </div>
     </div>
@@ -205,6 +205,48 @@
       </div>
     </div>
   </section>
+
+  <section class="section activity-gallery-section" id="activity-gallery">
+    <div class="wrap">
+      <div class="section-head activity-gallery-head">
+        <div>
+          <p class="kicker">A GLIMPSE OF OUR COMMUNITY</p>
+          <h2>教室裡的 CCIRC</h2>
+        </div>
+        <p>不刻意擺拍，留下教室裡真實發生的片刻。從熟悉的座位、螢幕上的題目，到有人站起來分享——這些就是我們的日常。點選照片可以慢慢看。</p>
+      </div>
+      <div class="activity-gallery" aria-label="CCIRC 活動照片集">
+        <button class="activity-photo activity-photo-feature" type="button" data-gallery-index="0" aria-label="放大檢視：學員上機練習">
+          <img src="../images/activities/ccirc-13.webp" alt="學員坐在電腦前操作鍵盤，練習程式設計" loading="lazy" width="2048" height="1152">
+          <span class="photo-overlay"><span>01 / PRACTICE</span><strong>專注練習，讓想法變成程式</strong></span>
+        </button>
+        <button class="activity-photo activity-photo-sign" type="button" data-gallery-index="1" aria-label="放大檢視：3B-CPU 教室門牌">
+          <img src="../images/activities/ccirc-14.webp" alt="精誠中學 3B-CPU 教室門牌" loading="lazy" width="2048" height="1152">
+          <span class="photo-overlay"><span>02 / OUR SPACE</span><strong>3B-CPU 教室</strong></span>
+        </button>
+        <button class="activity-photo activity-photo-brand" type="button" data-gallery-index="2" aria-label="放大檢視：CCIRC 社團識別畫面">
+          <img src="../images/activities/ccirc-12.webp" alt="教室大型螢幕顯示精誠中學資訊讀書會 CCIRC 標誌" loading="lazy" width="2048" height="1152">
+          <span class="photo-overlay"><span>03 / OUR IDENTITY</span><strong>精誠中學資訊讀書會</strong></span>
+        </button>
+        <button class="activity-photo activity-photo-teaching" type="button" data-gallery-index="3" aria-label="放大檢視：講師進行教學分享">
+          <img src="../images/activities/ccirc-15.webp" alt="講師在教室前方螢幕旁進行教學分享，學員坐在前方聆聽" loading="lazy" width="2048" height="1152">
+          <span class="photo-overlay"><span>04 / KNOWLEDGE SHARING</span><strong>把觀念分享給下一位學習者</strong></span>
+        </button>
+        <button class="activity-photo activity-photo-demo" type="button" data-gallery-index="4" aria-label="放大檢視：學員上台分享 ZeroJudge">
+          <img src="../images/activities/ccirc-16.webp" alt="學員站在大型螢幕前，向同學介紹 ZeroJudge 線上評測平台" loading="lazy" width="2048" height="1152">
+          <span class="photo-overlay"><span>05 / PEER LEARNING</span><strong>從解題到交流，彼此成長</strong></span>
+        </button>
+      </div>
+      <p class="gallery-note"><span aria-hidden="true">✳</span> 這面照片牆還會繼續長大，下一張就等著記錄新的故事。</p>
+    </div>
+  </section>
+
+  <dialog class="gallery-lightbox" id="galleryLightbox" aria-label="活動照片檢視器">
+    <div class="lightbox-topbar"><span class="lightbox-count" id="lightboxCount">01 / 05</span><button class="lightbox-close" type="button" aria-label="關閉照片檢視">×</button></div>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="上一張照片">‹</button>
+    <figure><img class="lightbox-image" id="lightboxImage" src="../images/activities/ccirc-13.webp" alt=""><figcaption id="lightboxCaption">學員上機練習</figcaption></figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="下一張照片">›</button>
+  </dialog>
 
   <section class="section">
     <div class="wrap">
@@ -251,12 +293,13 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <span class="footer-brand"><img class="icon-copyright" src="../images/icons/copyright.png" alt="©" width="18" height="18"> 2026 CCIRC</span>
+    <span class="footer-brand">© 2026 精誠中學資訊讀書會 <span lang="en">Ching Cheng High School Information Reading Club</span></span>
     <span>寫程式不孤單</span>
     <span>C++競技程式共學社群</span>
     <span class="footer-social"><a href="https://www.instagram.com/cchs_ccirc2026/" target="_blank" rel="noopener noreferrer" aria-label="CCIRC Instagram"><img src="../images/icons/ig.png" alt="" width="28" height="28"></a><a href="https://github.com/cchs-CCIRC" target="_blank" rel="noopener noreferrer" aria-label="CCIRC GitHub"><img src="../images/icons/github.png" alt="" width="28" height="28"></a><a href="https://www.threads.com/@cchs_ccirc2026" target="_blank" rel="noopener noreferrer" aria-label="CCIRC Threads"><img src="../images/icons/thread.png" alt="" width="28" height="28"></a><a href="https://www.pinterest.com/cchsccirc/" target="_blank" rel="noopener noreferrer" aria-label="CCIRC Pinterest"><img src="../images/icons/pinterest.png" alt="" width="28" height="28"></a><a href="https://discord.com/invite/EpBwZMwEpc" target="_blank" rel="noopener noreferrer" aria-label="CCIRC Discord"><img src="../images/icons/discord.png" alt="" width="28" height="28"></a></span>
   </div>
 </footer>
 <script src="../js/main.js"></script>
+<script src="../js/activity-gallery.js"></script>
 </body>
 </html>

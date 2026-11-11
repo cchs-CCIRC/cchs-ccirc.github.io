@@ -208,5 +208,26 @@ window.CCIRC_RESOURCES=[
     "title": "2026 精誠校內賽題解",
     "url": "https://hackmd.io/@ccirc/HkPb4KyBGe",
     "desc": "校內競賽題解與思路整理。"
+  },
+  {
+    "cohort": "3rd",
+    "category": "講義",
+    "title": "函式與遞迴",
+    "url": "https://hackmd.io/@ccirc3/BkYvRY5KGx",
+    "desc": "認識函式的宣告、參數與回傳值、區域與全域變數，以及遞迴的終止條件與深度。"
+  },
+  {
+    "cohort": "3rd",
+    "category": "講義",
+    "title": "STL 模板",
+    "url": "https://hackmd.io/@ccirc3/BJRBOvpYGx",
+    "desc": "介紹 C++ STL 常用容器，包括 vector、set、stack 與 queue，以及基本操作。"
+  },
+  {
+    "cohort": "3rd",
+    "category": "講義",
+    "title": "樹／圖基礎演算法",
+    "url": "https://hackmd.io/@ccirc3/Bk-JCY9tfe",
+    "desc": "學習圖的節點與邊、鄰接串列表示法，以及 DFS、BFS 圖形走訪。"
   }
 ];
